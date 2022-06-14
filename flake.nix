@@ -32,6 +32,8 @@
         packages = { };
         defaultPackage = { };
         defaultApp = { };
-        devShell = pkgs.mkShell { buildInputs = [ pkgs.nodejs pkgs.yarn ]; };
+        devShell = pkgs.mkShell {
+          buildInputs = with pkgs; [ nodejs yarn docker docker-compose ];
+        };
       });
 }
