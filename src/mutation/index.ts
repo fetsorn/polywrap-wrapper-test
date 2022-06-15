@@ -2,6 +2,7 @@ import {
   Ethereum_Mutation,
   Ipfs_Mutation,
   Input_setData,
+  Input_deployContract,
   Input_setIpfsData,
   SetIpfsDataResult,
 } from "./w3";
